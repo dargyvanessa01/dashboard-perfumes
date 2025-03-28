@@ -12,7 +12,7 @@ from preprocessing import crear_features
 df = pd.read_csv('Proyecto_final.csv', parse_dates=['Mes'])
 df = crear_features(df)
 df.set_index('Mes', inplace=True)  # Establecer 'Mes' como índice
-df.index.freq = 'ME'  # Establecer frecuencia explícita
+df.index.freq = 'M'  # Establecer frecuencia explícita
 
 print(df.columns)
 
